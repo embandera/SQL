@@ -44,3 +44,7 @@ Output:
 +------+
 
 */
+
+SELECT c.name 
+FROM Customer c
+WHERE COALESCE(referee_id,0) <> 2;
